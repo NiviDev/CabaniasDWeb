@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Cabañas</title>
+  </head>
+  <body>
+    <!-- ---------------------ACA EMPIEZA EL NAV---------------------------->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="index.html" >Cabañas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html" aria-current="page" href="#">Home</a>
+                        
+                        <a class="nav-link" href="#">Reservas</a>
+                        <a class="nav-link" href="#">Conocé San Luis</a>
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+<br><br>
+    <div class="container">
+        <h2 class="mt-4">Formulario de Alquiler de Cabaña</h2>
+
+        <form action="procesar_formulario.php" class="row g-3" method="POST">
+          <div class="form-group col-md-12">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group col-md-12">
+            <label for="nombre">Apellido:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+          </div>
+          
+          <div class="form-group col-md-12">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group col-md-12">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+          </div>
+          
+          <div class="form-group col-md-4">
+            <label for="fecha_inicio">Check in:</label>
+            <input type="date" class="form-control" id="fecha_inicio" name="fecha_inicio" required>
+          </div>
+          
+          <div class="form-group col-md-4">
+            <label for="fecha_fin">Check out:</label>
+            <input type="date" class="form-control" id="fecha_fin" name="fecha_fin" required>
+          </div>
+          
+          <div class="form-group col-md-4">
+            <label for="cantidad_personas">Cantidad de personas:</label>
+            <input type="number" class="form-control" id="cantidad_personas" name="cantidad_personas" min="1" max="2" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="comentarios">Comentarios:</label>
+            <textarea class="form-control" id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+    </div>
+<br><br>
+    <!-- ---------------------FOOTER---------------------------->
+    <footer class="bg-dark border-bottom">
+      <div class="container-fluid">
+        <div class="text-white"><br>
+          <ul class="list-unstyled">
+            <li class="text-decoration-none"><i class="bi bi-envelope-at-fill"></i> email@example.com</li>
+            <li><i class="bi bi-whatsapp"></i> +54 9 266 4555 555</li>
+            <li><i class="bi bi-instagram"></i> @username</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- ---------------------END FOOTER--------------------------->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
